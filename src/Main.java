@@ -105,6 +105,5 @@ public class Main {
         for (int i = 1896, a = i + 200; i <= a; i = i + 79) {
             System.out.println("Комета пролетит в  " + i + " году");
         }
-
     }
 }
