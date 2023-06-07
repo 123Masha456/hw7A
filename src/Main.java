@@ -30,13 +30,13 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println();
-        {
-            int a = 10;
-            for (a = 10; a >= 1; a = a - 1)
-                System.out.print(a + " ");
-            System.out.println();
+        int a = 10;
+        for (a = 10; a >= 1; a = a - 1) {
+            System.out.print(a + " ");
         }
+        System.out.println();
     }
+
 
     public static void task3() {
         System.out.println("Задача 3");
@@ -70,7 +70,7 @@ public class Main {
         for (int i = 2; money <= 12_000_000; i = i + 1) {
             penny = ((money / 100) * 7);
             money = money + penny;
-            if (i % 6 == 0 && i >= 0) {
+            if (i % 6 == 0) {
                 System.out.println("Месяц " + (i) + " накоплено " + money);
             }
         }
@@ -95,7 +95,7 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
         int totalDays = 31;
-        for (int i = 3; i <= 31; i = i + 7) {
+        for (int i = 3; i <= totalDays; i = i + 7) {
             System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
         }
     }
